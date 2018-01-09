@@ -40,7 +40,7 @@
     </bean>
 
 
-    <bean id="messageListener" class="com.rafa.mq.TestListener"/>
+    <bean id="messageListener" class="mq.MyListener"/>
 
     <bean id="jmsContainer" class="org.springframework.jms.listener.DefaultMessageListenerContainer">
         <property name="connectionFactory" ref="consumerConnectionFactory"/>

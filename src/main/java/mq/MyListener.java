@@ -6,9 +6,10 @@ import javax.jms.MessageListener;
 import javax.jms.TextMessage;
 
 /**
- * Created by Rafaxu on 12/6/17.
+ * Created by Rafaxu
  */
-public class TestListener implements MessageListener {
+
+public class MyListener implements javax.jms.MessageListener {
 
     public void onMessage(Message message) {
         if (message instanceof TextMessage) {
@@ -21,7 +22,7 @@ public class TestListener implements MessageListener {
             }
         }
         else {
-            throw new IllegalArgumentException("Message must be of type TextMessage");
+            throw new IllegalArgumentException("wrong type");
         }
     }
 }

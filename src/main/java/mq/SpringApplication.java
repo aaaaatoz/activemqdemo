@@ -8,10 +8,10 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * Hello world!
+ * Created by Rafaxu
  *
  */
-public class App 
+public class SpringApplication
 {
     public static void main( String[] args )
     {

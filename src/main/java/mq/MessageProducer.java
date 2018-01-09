@@ -9,7 +9,7 @@ import javax.jms.Session;
 import javax.jms.TextMessage;
 
 /**
- * Created by Rafa XU on 12/6/17.
+ * Created by Rafa XU
  */
 public class MessageProducer implements Runnable{
     private JmsTemplate jmsTemplate;
@@ -26,7 +26,6 @@ public class MessageProducer implements Runnable{
                         long delay = 300 * 1000;//5 mins
 
                         TextMessage textMessage = session.createTextMessage("Hello World");
-                        //textMessage.setLongProperty(ScheduledMessage.AMQ_SCHEDULED_DELAY,delay);
 
                         return textMessage;
                     }

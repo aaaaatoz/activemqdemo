@@ -43,7 +43,7 @@ public class JMSTopicMessageConsumerListener {
     }
 }
 
-//class Listener implements MessageListener{
+//class Listener implements MyListener{
 //
 //    public void onMessage(Message message) {
 //        try {
